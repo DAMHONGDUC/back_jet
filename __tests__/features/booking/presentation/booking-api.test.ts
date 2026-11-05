@@ -30,7 +30,7 @@ describe('booking through RTK Query', () => {
     const state = store.getState();
     expect(flightsApi.endpoints.getFlight.select('BJ-101')(state).data?.seatsAvailable).toBe(3);
     // Four seeded bookings, plus this one.
-    expect(bookingApi.endpoints.getBookings.select()(state).data).toHaveLength(5);
+    expect(bookingApi.endpoints.getBookings.select()(state).data).toHaveLength(9);
 
     subscriptions.forEach(subscription => subscription.unsubscribe());
   });
@@ -44,6 +44,6 @@ describe('booking through RTK Query', () => {
 
     expect(result.error).toEqual({ code: 'SOLD_OUT', message: 'This flight is sold out.' });
     const bookings = await store.dispatch(bookingApi.endpoints.getBookings.initiate());
-    expect(bookings.data).toHaveLength(4);
+    expect(bookings.data).toHaveLength(8);
   });
 });

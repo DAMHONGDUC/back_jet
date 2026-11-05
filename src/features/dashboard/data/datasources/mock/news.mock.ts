@@ -41,6 +41,25 @@ Tell your concierge their name and the crew will bring a bed, a bowl and treats 
   n8: `Choose your menu when you book, or ask the concierge for anything at all: sashimi from Sokyo, a birthday cake, your favourite Barossa shiraz.
 
 Our chefs work with the best kitchens at every airport we fly from, so dinner is fresh, not reheated.`,
+  n9: `Queenstown is the most dramatic approach we fly: down the Kawarau valley with the Remarkables off the left wing. From June to September a Challenger 350 leaves Melbourne every Friday at 07:00 and lands in time for the first chair.
+
+Skis, boards and boots travel free and are waiting by the car at the foot of the stairs. Your concierge can book lift passes, a heli-ski morning or a table at Amisfield.
+
+Charter the whole aircraft for the season and keep the same crew every weekend.`,
+  n10: `Empty legs are flights we have to make anyway: an aircraft heading home after dropping someone off. Instead of flying them empty, we offer them to members at up to 75 percent off.
+
+Turn on notifications and we will tell you the moment one opens on a route you have flown. Most are listed 24 to 72 hours ahead, so they suit a flexible weekend.
+
+You still get the whole aircraft, the private terminal and the same catering.`,
+  n11: `Every Sovereign aircraft now has Starlink on board. Expect 200 Mbps from gate to gate, enough for a video call over the Tasman or a film streamed in 4K over the Indian Ocean.
+
+There is nothing to set up: join the cabin network, accept once, and stay connected for the whole flight. It is included in every booking.`,
+  n12: `Uluru has no airline that waits for you. Our sunrise charter leaves Sydney at 03:30, lands at Ayers Rock as the sky turns orange, and a guide takes you straight to the base walk.
+
+Lunch is at Sails in the Desert, and you are home in time for dinner. Up to eight guests on a Citation Latitude, from $21,500 for the whole aircraft.`,
+  n13: `Carbon from every flight you take is now balanced at no cost to you. We buy sustainable aviation fuel at Brisbane and Melbourne, and fund verified reforestation in the Daintree for the rest.
+
+Your trip receipt shows the tonnes balanced, and your profile adds them up for the year.`,
 };
 
 export function buildMockNews(): NewsPostDto[] {
@@ -86,6 +105,36 @@ export function buildMockNews(): NewsPostDto[] {
       'Catering by request',
       'Tell us your menu; the chef meets you on board.',
       'news-6',
+    ),
+    post(
+      'n9',
+      'Ski season in Queenstown',
+      'Melbourne to the Remarkables every Friday, skis in the hold.',
+      'jet-31',
+    ),
+    post(
+      'n10',
+      'Empty legs, up to 75% off',
+      'The whole aircraft on flights that would otherwise fly empty.',
+      'jet-44',
+    ),
+    post(
+      'n11',
+      'Starlink on every aircraft',
+      'Gate-to-gate Wi-Fi fast enough for video calls over the ocean.',
+      'cabin-3',
+    ),
+    post(
+      'n12',
+      'Sunrise at Uluru',
+      'Leave Sydney before dawn, watch the rock turn red, home for dinner.',
+      'jet-27',
+    ),
+    post(
+      'n13',
+      'Every flight, carbon balanced',
+      'Sustainable fuel and Daintree reforestation, included in every fare.',
+      'jet-50',
     ),
   ];
 }

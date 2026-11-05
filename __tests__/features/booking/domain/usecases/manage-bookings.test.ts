@@ -38,14 +38,18 @@ test('the seeded account has upcoming, flown and cancelled trips, soonest first'
   const bookings = await new GetBookings(repository).execute();
 
   expect(bookings.map(item => item.reference)).toEqual([
+    'BJU1RU',
+    'BJ7BRM',
     'BJ2KQP',
+    'BJC4BR',
     'BJX5TN',
     'BJ4F7Q',
     'BJR8MX',
+    'BJ9ZQS',
   ]);
   expect(
     bookings.filter(item => isUpcoming(item, NOW)).map(item => item.reference),
-  ).toEqual(['BJ4F7Q', 'BJR8MX']);
+  ).toEqual(['BJ4F7Q', 'BJR8MX', 'BJ9ZQS']);
 });
 
 test('cancels an upcoming trip once, never a flown one', async () => {
@@ -174,7 +178,7 @@ test('placing the same order again returns the first booking and charges once', 
 
   expect(retry.id).toBe(first.id);
   expect(await walletBalance(payments)).toBe(10_000);
-  expect(await bookings.getBookings()).toHaveLength(5);
+  expect(await bookings.getBookings()).toHaveLength(9);
 });
 
 test('seats on a scheduled flight are taken with the booking, and refused when gone', async () => {

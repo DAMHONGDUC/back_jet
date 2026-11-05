@@ -40,5 +40,21 @@ export function buildMockRoutes(): PopularRouteDto[] {
       'jet-7',
     ),
     route('r4', ['SYD', 'Sydney'], ['SIN', 'Singapore'], 480, 98500, 'jet-18'),
+    route('r5', ['SYD', 'Sydney'], ['CBR', 'Canberra'], 40, 7900, 'jet-12'),
+    route('r6', ['MEB', 'Melbourne'], ['HBA', 'Hobart'], 75, 12400, 'jet-23'),
+    route('r7', ['BNE', 'Brisbane'], ['CNS', 'Cairns'], 135, 21900, 'jet-6'),
+    route('r8', ['PER', 'Perth'], ['BME', 'Broome'], 150, 25800, 'jet-16'),
+    route('r9', ['SYD', 'Sydney'], ['AYQ', 'Uluru'], 195, 34800, 'jet-27'),
+    route(
+      'r10',
+      ['MEB', 'Melbourne'],
+      ['ZQN', 'Queenstown'],
+      215,
+      38900,
+      'jet-31',
+    ),
+    route('r11', ['BNE', 'Brisbane'], ['NAN', 'Fiji'], 260, 46500, 'jet-44'),
+    route('r12', ['PER', 'Perth'], ['DPS', 'Bali'], 230, 41200, 'jet-50'),
+    route('r13', ['SYD', 'Sydney'], ['HND', 'Tokyo'], 600, 132000, 'jet-14'),
   ];
 }

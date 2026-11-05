@@ -50,7 +50,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.8,
     cabin: 'Club cabin · 1.46 m',
     amenities: ['Wi-Fi', 'Refreshment centre', 'Private lavatory'],
-    photos: ['jet-17', 'cabin-1', 'jet-8'],
+    photos: ['jet-17', 'cabin-1', 'jet-8', 'cabin-6'],
   },
   {
     model: 'Pilatus PC-12 NGX',
@@ -62,7 +62,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.1,
     cabin: 'Executive cabin · 1.47 m',
     amenities: ['Refreshment centre', 'Private lavatory', 'Short-strip access'],
-    photos: ['jet-41', 'cabin-2'],
+    photos: ['jet-41', 'cabin-2', 'jet-1', 'cabin-7'],
   },
   {
     model: 'Beechcraft King Air 350i',
@@ -74,7 +74,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.5,
     cabin: 'Twin-club cabin · 1.45 m',
     amenities: ['Wi-Fi', 'Refreshment centre', 'Short-strip access'],
-    photos: ['jet-35', 'cabin-3'],
+    photos: ['jet-35', 'cabin-3', 'jet-2', 'cabin-8'],
   },
   {
     model: 'Embraer Phenom 100EX',
@@ -86,7 +86,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.3,
     cabin: 'Club cabin · 1.50 m',
     amenities: ['Wi-Fi', 'Refreshment centre', 'Private lavatory'],
-    photos: ['jet-53', 'cabin-4', 'jet-11'],
+    photos: ['jet-53', 'cabin-4', 'jet-11', 'cabin-9'],
   },
   {
     model: 'Cessna Citation M2 Gen2',
@@ -98,7 +98,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.6,
     cabin: 'Club cabin · 1.45 m',
     amenities: ['Wi-Fi', 'Refreshment centre', 'Private lavatory'],
-    photos: ['jet-48', 'cabin-5'],
+    photos: ['jet-48', 'cabin-5', 'jet-3', 'cabin-10'],
   },
   {
     model: 'Hawker 400XP',
@@ -110,7 +110,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.5,
     cabin: 'Club cabin · 1.45 m',
     amenities: ['Wi-Fi', 'Catering', 'Private lavatory'],
-    photos: ['jet-37', 'cabin-6'],
+    photos: ['jet-37', 'cabin-6', 'jet-4', 'cabin-1'],
   },
   {
     model: 'Nextant 400XTi',
@@ -122,7 +122,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.5,
     cabin: 'Club cabin · 1.45 m',
     amenities: ['Wi-Fi', 'Catering', 'Private lavatory'],
-    photos: ['jet-38', 'cabin-7', 'jet-19'],
+    photos: ['jet-38', 'cabin-7', 'jet-19', 'cabin-2'],
   },
   {
     model: 'Cessna Citation CJ3+',
@@ -134,7 +134,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.9,
     cabin: 'Club cabin · 1.45 m',
     amenities: ['Wi-Fi', 'Catering', 'Private lavatory'],
-    photos: ['jet-36', 'cabin-8'],
+    photos: ['jet-36', 'cabin-8', 'jet-5', 'cabin-3'],
   },
   {
     model: 'Cessna Citation CJ4 Gen2',
@@ -146,7 +146,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.9,
     cabin: 'Club cabin · 1.45 m',
     amenities: ['Wi-Fi', 'Catering', 'Private lavatory'],
-    photos: ['jet-13', 'cabin-9'],
+    photos: ['jet-13', 'cabin-9', 'jet-6', 'cabin-4'],
   },
   {
     model: 'Pilatus PC-24',
@@ -158,7 +158,7 @@ const FLEET: Jet[] = [
     baggageM3: 2.5,
     cabin: 'Flat-floor cabin · 1.55 m',
     amenities: ['Wi-Fi', 'Refreshment centre', 'Private lavatory'],
-    photos: ['jet-12', 'cabin-10', 'jet-23'],
+    photos: ['jet-12', 'cabin-10', 'jet-23', 'cabin-5'],
   },
   {
     model: 'Embraer Phenom 300E',
@@ -170,7 +170,7 @@ const FLEET: Jet[] = [
     baggageM3: 2.2,
     cabin: 'Oval cabin · 1.50 m',
     amenities: ['Wi-Fi', 'Catering', 'Private lavatory'],
-    photos: ['jet-25', 'cabin-1'],
+    photos: ['jet-25', 'cabin-1', 'jet-7', 'cabin-6'],
   },
   {
     model: 'Learjet 75 Liberty',
@@ -182,7 +182,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.8,
     cabin: 'Club cabin · 1.50 m',
     amenities: ['Wi-Fi', 'Catering', 'Private lavatory'],
-    photos: ['jet-40', 'cabin-2'],
+    photos: ['jet-40', 'cabin-2', 'jet-9', 'cabin-7'],
   },
   {
     model: 'Cessna Citation XLS+',
@@ -194,7 +194,7 @@ const FLEET: Jet[] = [
     baggageM3: 2.3,
     cabin: 'Stand-up cabin · 1.73 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant'],
-    photos: ['jet-33', 'cabin-3', 'jet-24'],
+    photos: ['jet-33', 'cabin-3', 'jet-24', 'cabin-8'],
   },
   {
     model: 'Learjet 60XR',
@@ -206,7 +206,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.4,
     cabin: 'Club cabin · 1.73 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant'],
-    photos: ['jet-26', 'cabin-4'],
+    photos: ['jet-26', 'cabin-4', 'jet-10', 'cabin-9'],
   },
   {
     model: 'Hawker 900XP',
@@ -218,7 +218,7 @@ const FLEET: Jet[] = [
     baggageM3: 1.4,
     cabin: 'Stand-up cabin · 1.75 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant'],
-    photos: ['jet-43', 'cabin-5'],
+    photos: ['jet-43', 'cabin-5', 'jet-12', 'cabin-10'],
   },
   {
     model: 'Gulfstream G150',
@@ -230,7 +230,7 @@ const FLEET: Jet[] = [
     baggageM3: 2.1,
     cabin: 'Club cabin · 1.75 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant'],
-    photos: ['jet-32', 'cabin-6', 'jet-27'],
+    photos: ['jet-32', 'cabin-6', 'jet-27', 'cabin-1'],
   },
   {
     model: 'Cessna Citation Sovereign+',
@@ -242,7 +242,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.8,
     cabin: 'Stand-up cabin · 1.73 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant'],
-    photos: ['jet-52', 'cabin-7'],
+    photos: ['jet-52', 'cabin-7', 'jet-13', 'cabin-2'],
   },
   {
     model: 'Cessna Citation Latitude',
@@ -254,7 +254,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.0,
     cabin: 'Flat-floor cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant'],
-    photos: ['jet-21', 'cabin-8'],
+    photos: ['jet-21', 'cabin-8', 'jet-14', 'cabin-3'],
   },
   {
     model: 'Embraer Praetor 500',
@@ -266,7 +266,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.0,
     cabin: 'Flat-floor cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-50', 'cabin-9', 'jet-28'],
+    photos: ['jet-50', 'cabin-9', 'jet-28', 'cabin-4'],
   },
   {
     model: 'Bombardier Challenger 300',
@@ -278,7 +278,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.0,
     cabin: 'Stand-up cabin · 1.85 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-45', 'cabin-10'],
+    photos: ['jet-45', 'cabin-10', 'jet-15', 'cabin-5'],
   },
   {
     model: 'Gulfstream G200',
@@ -290,7 +290,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.2,
     cabin: 'Stand-up cabin · 1.91 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-34', 'cabin-1'],
+    photos: ['jet-34', 'cabin-1', 'jet-16', 'cabin-6'],
   },
   {
     model: 'Embraer Praetor 600',
@@ -302,7 +302,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.4,
     cabin: 'Flat-floor cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-15', 'cabin-2', 'jet-29'],
+    photos: ['jet-15', 'cabin-2', 'jet-29', 'cabin-7'],
   },
   {
     model: 'Bombardier Challenger 350',
@@ -314,7 +314,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.0,
     cabin: 'Stand-up cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-2', 'cabin-3'],
+    photos: ['jet-2', 'cabin-3', 'jet-17', 'cabin-8'],
   },
   {
     model: 'Bombardier Challenger 3500',
@@ -326,7 +326,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.0,
     cabin: 'Stand-up cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-46', 'cabin-4'],
+    photos: ['jet-46', 'cabin-4', 'jet-18', 'cabin-9'],
   },
   {
     model: 'Gulfstream G280',
@@ -338,7 +338,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.0,
     cabin: 'Stand-up cabin · 1.85 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-10', 'cabin-5', 'jet-42'],
+    photos: ['jet-10', 'cabin-5', 'jet-42', 'cabin-10'],
   },
   {
     model: 'Cessna Citation Longitude',
@@ -350,7 +350,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.2,
     cabin: 'Flat-floor cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-55', 'cabin-6'],
+    photos: ['jet-55', 'cabin-6', 'jet-20', 'cabin-1'],
   },
   {
     model: 'Dassault Falcon 2000LXS',
@@ -362,7 +362,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.7,
     cabin: 'Stand-up cabin · 1.88 m',
     amenities: ['Wi-Fi', 'Hot catering', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-39', 'cabin-7'],
+    photos: ['jet-39', 'cabin-7', 'jet-21', 'cabin-2'],
   },
   {
     model: 'Bombardier Challenger 605',
@@ -374,7 +374,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.2,
     cabin: 'Wide cabin · 1.85 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-47', 'cabin-8', 'jet-42'],
+    photos: ['jet-47', 'cabin-8', 'jet-42', 'cabin-3'],
   },
   {
     model: 'Embraer Legacy 650E',
@@ -386,7 +386,7 @@ const FLEET: Jet[] = [
     baggageM3: 6.8,
     cabin: 'Three-zone cabin · 1.83 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-51', 'cabin-9', 'jet-54'],
+    photos: ['jet-51', 'cabin-9', 'jet-54', 'cabin-4'],
   },
   {
     model: 'Bombardier Challenger 650',
@@ -398,7 +398,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.3,
     cabin: 'Wide cabin · 1.85 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-5', 'cabin-10', 'jet-8'],
+    photos: ['jet-5', 'cabin-10', 'jet-8', 'cabin-5'],
   },
   {
     model: 'Dassault Falcon 900LX',
@@ -410,7 +410,7 @@ const FLEET: Jet[] = [
     baggageM3: 3.6,
     cabin: 'Three-zone cabin · 1.88 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-16', 'cabin-1', 'jet-11'],
+    photos: ['jet-16', 'cabin-1', 'jet-11', 'cabin-6'],
   },
   {
     model: 'Gulfstream G450',
@@ -422,7 +422,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.8,
     cabin: 'Three-zone cabin · 1.88 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-22', 'cabin-2', 'jet-19'],
+    photos: ['jet-22', 'cabin-2', 'jet-19', 'cabin-7'],
   },
   {
     model: 'Dassault Falcon 7X',
@@ -434,7 +434,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.0,
     cabin: 'Three-zone cabin · 1.88 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-49', 'cabin-3', 'jet-23'],
+    photos: ['jet-49', 'cabin-3', 'jet-23', 'cabin-8'],
   },
   {
     model: 'Dassault Falcon 6X',
@@ -446,7 +446,7 @@ const FLEET: Jet[] = [
     baggageM3: 4.0,
     cabin: 'Three-zone cabin · 1.98 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-7', 'cabin-4', 'jet-24'],
+    photos: ['jet-7', 'cabin-4', 'jet-24', 'cabin-9'],
   },
   {
     model: 'Gulfstream G500',
@@ -458,7 +458,7 @@ const FLEET: Jet[] = [
     baggageM3: 5.0,
     cabin: 'Three-zone cabin · 1.88 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Lie-flat seats'],
-    photos: ['jet-31', 'cabin-5', 'jet-27'],
+    photos: ['jet-31', 'cabin-5', 'jet-27', 'cabin-10'],
   },
   {
     model: 'Dassault Falcon 8X',
@@ -476,7 +476,7 @@ const FLEET: Jet[] = [
       'Bedroom',
       'Shower',
     ],
-    photos: ['jet-56', 'cabin-6', 'jet-28'],
+    photos: ['jet-56', 'cabin-6', 'jet-28', 'cabin-1'],
   },
   {
     model: 'Bombardier Global 5500',
@@ -494,7 +494,7 @@ const FLEET: Jet[] = [
       'Lie-flat seats',
       'Bedroom',
     ],
-    photos: ['jet-44', 'cabin-7', 'jet-29'],
+    photos: ['jet-44', 'cabin-7', 'jet-29', 'cabin-2'],
   },
   {
     model: 'Gulfstream G550',
@@ -512,7 +512,7 @@ const FLEET: Jet[] = [
       'Bedroom',
       'Shower',
     ],
-    photos: ['jet-3', 'cabin-8', 'jet-42'],
+    photos: ['jet-3', 'cabin-8', 'jet-42', 'cabin-3'],
   },
   {
     model: 'Gulfstream G600',
@@ -530,7 +530,7 @@ const FLEET: Jet[] = [
       'Bedroom',
       'Shower',
     ],
-    photos: ['jet-6', 'cabin-9', 'jet-29'],
+    photos: ['jet-6', 'cabin-9', 'jet-29', 'cabin-4'],
   },
   {
     model: 'Bombardier Global 6500',
@@ -542,7 +542,7 @@ const FLEET: Jet[] = [
     baggageM3: 5.1,
     cabin: 'Three-zone cabin · 1.88 m',
     amenities: ['Wi-Fi', 'Chef on board', 'Flight attendant', 'Bedroom'],
-    photos: ['jet-4', 'cabin-10', 'jet-54'],
+    photos: ['jet-4', 'cabin-10', 'jet-54', 'cabin-5'],
   },
   {
     model: 'Gulfstream G650ER',
@@ -560,7 +560,7 @@ const FLEET: Jet[] = [
       'Bedroom',
       'Shower',
     ],
-    photos: ['jet-1', 'cabin-1', 'jet-8'],
+    photos: ['jet-1', 'cabin-1', 'jet-8', 'cabin-6'],
   },
   {
     model: 'Gulfstream G700',
@@ -578,7 +578,7 @@ const FLEET: Jet[] = [
       'Bedroom',
       'Shower',
     ],
-    photos: ['jet-14', 'cabin-2', 'jet-11'],
+    photos: ['jet-14', 'cabin-2', 'jet-11', 'cabin-7'],
   },
   {
     model: 'Bombardier Global 7500',
@@ -596,7 +596,7 @@ const FLEET: Jet[] = [
       'Bedroom',
       'Shower',
     ],
-    photos: ['jet-18', 'cabin-3', 'jet-19'],
+    photos: ['jet-18', 'cabin-3', 'jet-19', 'cabin-8'],
   },
   {
     model: 'Embraer Lineage 1000E',
@@ -615,7 +615,7 @@ const FLEET: Jet[] = [
       'Shower',
       'Conference room',
     ],
-    photos: ['jet-57', 'cabin-4', 'jet-23'],
+    photos: ['jet-57', 'cabin-4', 'jet-23', 'cabin-9'],
   },
   {
     model: 'Airbus ACJ319neo',
@@ -634,7 +634,7 @@ const FLEET: Jet[] = [
       'Shower',
       'Conference room',
     ],
-    photos: ['jet-20', 'cabin-5', 'jet-24'],
+    photos: ['jet-20', 'cabin-5', 'jet-24', 'cabin-10'],
   },
   {
     model: 'Boeing Business Jet',
@@ -653,7 +653,7 @@ const FLEET: Jet[] = [
       'Shower',
       'Conference room',
     ],
-    photos: ['jet-9', 'cabin-6', 'jet-27'],
+    photos: ['jet-9', 'cabin-6', 'jet-27', 'cabin-1'],
   },
 ];
 

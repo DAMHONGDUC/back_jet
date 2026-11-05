@@ -8,7 +8,7 @@ import { GetNews } from '@/features/dashboard/domain/usecases/get-news';
 const post = (id: string, status: NewsPost['status'] = NewsStatus.Published) =>
   ({ id, status } as NewsPost);
 
-test('keeps the first five published stories', async () => {
+test('keeps the first eight published stories', async () => {
   const posts = [
     post('1'),
     post('2', NewsStatus.Draft),
@@ -18,6 +18,9 @@ test('keeps the first five published stories', async () => {
     post('6'),
     post('7'),
     post('8'),
+    post('9'),
+    post('10'),
+    post('11'),
   ];
   const repository = {
     getNews: async () => posts,
@@ -25,5 +28,14 @@ test('keeps the first five published stories', async () => {
 
   const news = await new GetNews(repository).execute();
 
-  expect(news.map(item => item.id)).toEqual(['1', '3', '5', '6', '7']);
+  expect(news.map(item => item.id)).toEqual([
+    '1',
+    '3',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+  ]);
 });

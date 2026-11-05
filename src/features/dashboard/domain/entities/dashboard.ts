@@ -17,7 +17,7 @@ export enum NewsStatus {
 }
 
 /** The most stories the carousel shows. */
-export const MAX_NEWS_POSTS = 5;
+export const MAX_NEWS_POSTS = 8;
 
 /** A route members often fly, suggested under the search. */
 export type PopularRoute = {
@@ -37,4 +37,4 @@ export type PopularRoute = {
 };
 
 /** The most routes the dashboard suggests. */
-export const MAX_POPULAR_ROUTES = 4;
+export const MAX_POPULAR_ROUTES = 6;

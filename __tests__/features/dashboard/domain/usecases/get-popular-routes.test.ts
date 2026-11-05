@@ -5,13 +5,15 @@ import { GetPopularRoutes } from '@/features/dashboard/domain/usecases/get-popul
 const route = (id: string, fromPrice: number) =>
   ({ id, fromPrice } as PopularRoute);
 
-test('keeps the four cheapest routes, cheapest first', async () => {
+test('keeps the six cheapest routes, cheapest first', async () => {
   const routes = [
     route('a', 9000),
     route('b', 4000),
     route('c', 12000),
     route('d', 7000),
     route('e', 5000),
+    route('f', 15000),
+    route('g', 3000),
   ];
   const repository = {
     getPopularRoutes: async () => routes,
@@ -19,5 +21,5 @@ test('keeps the four cheapest routes, cheapest first', async () => {
 
   const popular = await new GetPopularRoutes(repository).execute();
 
-  expect(popular.map(item => item.id)).toEqual(['b', 'e', 'd', 'a']);
+  expect(popular.map(item => item.id)).toEqual(['g', 'b', 'e', 'd', 'a', 'c']);
 });

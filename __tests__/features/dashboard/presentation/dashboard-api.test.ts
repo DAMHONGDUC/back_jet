@@ -23,5 +23,8 @@ test('searches charters, and news through the use cases', async () => {
     'n3',
     'n5',
     'n7',
+    'n8',
+    'n9',
+    'n10',
   ]);
 });

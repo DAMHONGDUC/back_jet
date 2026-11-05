@@ -46,8 +46,13 @@ const OOL: Place = ['OOL', 'Gold Coast', 'Australia/Brisbane'];
 const HTI: Place = ['HTI', 'Hamilton Island', 'Australia/Brisbane'];
 const BNE: Place = ['BNE', 'Brisbane', 'Australia/Brisbane'];
 const SIN: Place = ['SIN', 'Singapore', 'Asia/Singapore'];
+const CBR: Place = ['CBR', 'Canberra', 'Australia/Sydney'];
+const PER: Place = ['PER', 'Perth', 'Australia/Perth'];
+const BME: Place = ['BME', 'Broome', 'Australia/Perth'];
+const AYQ: Place = ['AYQ', 'Uluru', 'Australia/Darwin'];
+const ZQN: Place = ['ZQN', 'Queenstown', 'Pacific/Auckland'];
 
-/** An account with history: two upcoming trips, one flown and one cancelled. */
+/** An account with history: three upcoming trips, four flown and one cancelled. */
 export function buildMockBookings(now: Date): BookingDto[] {
   const base = { contact_email: EMAIL, notes: '', created_at: at(now, -3, 10) };
   return [
@@ -106,6 +111,73 @@ export function buildMockBookings(now: Date): BookingDto[] {
       currency: 'AUD',
       payment_label: 'Visa •••• 4242',
     },
+    {
+      ...base,
+      id: 'bk-seed-5',
+      pnr: 'BJ9ZQS',
+      kind: BookingKind.Charter,
+      status: BookingStatus.Confirmed,
+      legs: [
+        leg(MEB, ZQN, 'Bombardier Challenger 3500', at(now, 45, 7), 215),
+        leg(ZQN, MEB, 'Bombardier Challenger 3500', at(now, 49, 15), 230),
+      ],
+      passenger_names: [
+        PASSENGER,
+        'Sophia Reed',
+        'Oliver Reed',
+        'James Carter',
+      ],
+      total_cents: 9150000,
+      currency: 'AUD',
+      payment_label: 'Mastercard •••• 5454',
+      notes:
+        'Two pairs of skis and a snowboard. A car to the lodge at Coronet Peak.',
+      created_at: at(now, -1, 20),
+    },
+    {
+      ...base,
+      id: 'bk-seed-6',
+      pnr: 'BJC4BR',
+      kind: BookingKind.Seats,
+      status: BookingStatus.Confirmed,
+      legs: [leg(SYD, CBR, 'Pilatus PC-24', at(now, -18, 7, 15), 40)],
+      passenger_names: [PASSENGER],
+      total_cents: 185000,
+      currency: 'AUD',
+      payment_label: 'Sovereign Wallet',
+      created_at: at(now, -25, 16),
+    },
+    {
+      ...base,
+      id: 'bk-seed-7',
+      pnr: 'BJ7BRM',
+      kind: BookingKind.Charter,
+      status: BookingStatus.Confirmed,
+      legs: [leg(PER, BME, 'Cessna Citation Latitude', at(now, -75, 10), 150)],
+      passenger_names: [PASSENGER, 'Sophia Reed'],
+      total_cents: 2580000,
+      currency: 'AUD',
+      payment_label: 'Amex •••• 1005',
+      notes: 'Sunset table at Matso’s, please.',
+      created_at: at(now, -90, 11),
+    },
+    {
+      ...base,
+      id: 'bk-seed-8',
+      pnr: 'BJU1RU',
+      kind: BookingKind.Charter,
+      status: BookingStatus.Confirmed,
+      legs: [
+        leg(SYD, AYQ, 'Cessna Citation Latitude', at(now, -120, 3, 30), 195),
+        leg(AYQ, SYD, 'Cessna Citation Latitude', at(now, -120, 15), 185),
+      ],
+      passenger_names: [PASSENGER, 'Sophia Reed', 'Oliver Reed', 'Emma Walsh'],
+      total_cents: 6960000,
+      currency: 'AUD',
+      payment_label: 'Visa •••• 4242',
+      notes: 'Breakfast on board; Oliver loves pancakes.',
+      created_at: at(now, -150, 9),
+    },
   ];
 }
 
@@ -142,6 +214,18 @@ export function buildMockPaymentMethods(): PaymentMethodDto[] {
       last4: '1005',
       exp_month: 2,
       exp_year: 2028,
+      holder: PASSENGER,
+      balance_cents: null,
+      currency: null,
+      is_default: false,
+    },
+    {
+      id: 'pm-mastercard',
+      type: PaymentMethodKind.Card,
+      brand: CardBrand.Mastercard,
+      last4: '5454',
+      exp_month: 11,
+      exp_year: 2027,
       holder: PASSENGER,
       balance_cents: null,
       currency: null,
